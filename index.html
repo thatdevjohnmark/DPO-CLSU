@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Privacy Office - Central Luzon State University</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="./dist/output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body class="font-sans text-gray-800">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-green-600 to-green-700 text-white py-4 fixed w-full top-0 z-50 shadow-lg">
+        <nav class="max-w-6xl mx-auto px-8 flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <img src="img/clsu-logo-green.png" alt="CLSU Logo" class="w-12 h-12 bg-white rounded-full p-1">
+                <h1 class="text-xl font-semibold">CLSU DPO</h1>
+            </div>
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#home" class="font-medium hover:text-yellow-400 transition-colors duration-300">Home</a></li>
+                <li><a href="#about" class="font-medium hover:text-yellow-400 transition-colors duration-300">About</a></li>
+                <li><a href="#services" class="font-medium hover:text-yellow-400 transition-colors duration-300">Services</a></li>
+                <li><a href="#contact" class="font-medium hover:text-yellow-400 transition-colors duration-300">Contact</a></li>
+            </ul>
+            <button class="md:hidden text-2xl" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+            <ul class="px-8 py-4 space-y-4">
+                <li><a href="#home" class="block font-medium hover:text-yellow-400 transition-colors duration-300">Home</a></li>
+                <li><a href="#about" class="block font-medium hover:text-yellow-400 transition-colors duration-300">About</a></li>
+                <li><a href="#services" class="block font-medium hover:text-yellow-400 transition-colors duration-300">Services</a></li>
+                <li><a href="#contact" class="block font-medium hover:text-yellow-400 transition-colors duration-300">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-cover bg-center bg-no-repeat text-white flex items-center justify-center overflow-hidden" style="height: 100vh; background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(42, 127, 62, 0.8)), url('img/CLSU-73e8423a.jpeg');">
+        <!-- Subtle background pattern for texture -->
+        <div class="absolute inset-0 bg-black/20"></div>
+        
+        <!-- Content container with better spacing -->
+        <div class="max-w-5xl mx-auto px-6 md:px-8 text-center relative z-10">
+            <!-- Status indicator -->
+            <div class="mb-6">
+                <div class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md rounded-full px-4 py-2 border border-white/25 shadow-lg">
+                    <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                    <span class="text-sm font-medium tracking-wide">Data Privacy Office Active</span>
+                </div>
+            </div>
+            
+            <!-- Main heading with improved readability -->
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold mb-4 leading-tight tracking-tight">
+                <span class="block text-white drop-shadow-lg">Data Privacy</span>
+                <span class="block text-yellow-300 drop-shadow-lg">Office</span>
+            </h1>
+            
+            <!-- Institution name with better contrast -->
+            <div class="mb-6">
+                <p class="text-lg md:text-xl font-medium text-white/90 tracking-wide">Central Luzon State University</p>
+            </div>
+            
+            <!-- Clear value proposition -->
+            <div class="mb-10 max-w-4xl mx-auto">
+                <p class="text-lg md:text-xl text-white/95 leading-relaxed font-light">
+                    YWelcome to the Data Privacy Office at Central Luzon State University, where we prioritize your privacy and data protection. Our mission is to ensure that your personal information is safeguarded while fostering a culture of transparency and trust.
+                </p>
+            </div>
+            
+            <!-- Enhanced call-to-action buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center mb-16">
+                <a href="#contact" class="group relative bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold text-lg px-8 py-4 rounded-full shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 border-2 border-yellow-400 hover:border-yellow-500">
+                    <span class="flex items-center justify-center">
+                        <i class="fas fa-envelope mr-3 group-hover:scale-110 transition-transform duration-300"></i>
+                        Get in Touch
+                    </span>
+                </a>
+                <a href="#services" class="group relative bg-transparent hover:bg-white/10 text-white font-semibold text-lg px-8 py-4 rounded-full border-2 border-white/50 hover:border-white transition-all duration-300 backdrop-blur-sm">
+                    <span class="flex items-center justify-center">
+                        <i class="fas fa-shield-alt mr-3 group-hover:scale-110 transition-transform duration-300"></i>
+                        Explore Services
+                    </span>
+                </a>
+            </div>
+            
+            <!-- Trust indicators -->
+            <div class="flex flex-wrap justify-center items-center gap-6 md:gap-8 text-sm text-white/80">
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-check-circle text-green-400"></i>
+                    <span>DPA 2012 Compliant</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-shield-alt text-green-400"></i>
+                    <span>Secure & Confidential</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fas fa-clock text-green-400"></i>
+                    <span>24/7 Support</span>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Improved scroll indicator -->
+        <div class="absolute bottom-6 left-1/2 transform -translate-x-1/2">
+            <div class="flex flex-col items-center gap-2 text-white/70 hover:text-white transition-colors duration-300 cursor-pointer" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+                <span class="text-xs font-medium tracking-wide">Scroll to explore</span>
+                <i class="fas fa-chevron-down text-xl animate-bounce"></i>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Privacy Commitment Section -->
+    <section class="py-24 bg-gradient-to-br from-green-50 via-white to-yellow-50 relative overflow-hidden">
+        <!-- Background decorative elements -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-20 left-20 w-96 h-96 bg-green-300 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-20 w-80 h-80 bg-yellow-300 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-6 md:px-8 relative z-10">
+            <!-- Section header -->
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
+                    <i class="fas fa-shield-alt"></i>
+                    Our Commitment
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Protecting Your Privacy</h2>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">In today's digital age, safeguarding personal information is crucial. Our office is dedicated to ensuring that all data is handled with the utmost care and security.</p>
+            </div>
+            
+            <!-- Main content grid -->
+            <div class="grid lg:grid-cols-3 gap-8 mb-16">
+                <!-- Data Protection Card -->
+                <div class="group bg-white rounded-2xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-lock text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Data Protection</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">We implement robust measures to secure your personal information from unauthorized access, ensuring your data remains protected at all times.</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Encrypted data transmission</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Secure storage systems</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-green-500"></i>
+                            <span>Regular security audits</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Your Rights Card -->
+                <div class="group bg-white rounded-2xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-user-shield text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Your Rights</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">You have the right to access, correct, and delete your personal data. We are committed to providing you with the information you need to make informed decisions.</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-yellow-500"></i>
+                            <span>Access your personal data</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-yellow-500"></i>
+                            <span>Request data correction</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-yellow-500"></i>
+                            <span>Data deletion rights</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Transparency Card -->
+                <div class="group bg-white rounded-2xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <i class="fas fa-eye text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">Transparency</h3>
+                    <p class="text-gray-600 leading-relaxed mb-6">We believe in complete transparency about how we handle your data. Clear policies and open communication are at the heart of our approach.</p>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-blue-500"></i>
+                            <span>Clear privacy policies</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-blue-500"></i>
+                            <span>Open communication</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check text-blue-500"></i>
+                            <span>Regular updates</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Bottom CTA section -->
+            <div class="bg-gradient-to-r from-green-600 to-green-700 rounded-3xl p-8 md:p-12 text-center text-white relative overflow-hidden">
+                <!-- Background pattern -->
+                <div class="absolute inset-0 opacity-10">
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-white rounded-full -translate-y-32 translate-x-32"></div>
+                    <div class="absolute bottom-0 left-0 w-48 h-48 bg-yellow-300 rounded-full translate-y-24 -translate-x-24"></div>
+                </div>
+                
+                <div class="relative z-10">
+                    <h3 class="text-3xl md:text-4xl font-bold mb-4">Ready to Learn More?</h3>
+                    <p class="text-xl mb-8 opacity-90 max-w-2xl mx-auto">Discover how we protect your privacy and ensure your data security. Contact us today to learn more about our comprehensive data protection services.</p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a href="#contact" class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-8 py-4 rounded-full transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1">
+                            <i class="fas fa-envelope mr-2"></i>Contact Us
+                        </a>
+                        <a href="#services" class="bg-transparent hover:bg-white/10 text-white font-semibold px-8 py-4 rounded-full border-2 border-white/50 hover:border-white transition-all duration-300">
+                            <i class="fas fa-info-circle mr-2"></i>Learn More
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-8">
+            <h2 class="section-title">About Our Office</h2>
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h3 class="text-3xl font-bold mb-4 text-green-700">Committed to Data Protection Excellence</h3>
+                    <p class="text-lg mb-4">The Data Privacy Office (DPO) of Central Luzon State University is dedicated to ensuring the protection of personal data and compliance with the Data Privacy Act of 2012 (Republic Act No. 10173).</p>
+                    <p class="text-lg mb-4">Our office serves as the central hub for all data privacy concerns, providing guidance, training, and support to the university community in matters related to personal data processing and protection.</p>
+                    <p class="text-lg">We work closely with all academic and administrative units to establish and maintain robust data protection practices that safeguard the privacy rights of our students, faculty, staff, and stakeholders.</p>
+                </div>
+                <div class="text-center">
+                    <div class="bg-white p-8 rounded-lg shadow-xl">
+                        <div class="w-32 h-32 bg-green-600 rounded-full mx-auto mb-6 flex items-center justify-center">
+                            <i class="fas fa-shield-alt text-white text-4xl"></i>
+                        </div>
+                        <h4 class="text-xl font-semibold text-green-700 mb-2">Data Protection</h4>
+                        <p class="text-gray-600">Ensuring your privacy and data security</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-8">
+            <h2 class="section-title">Our Services</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card group hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:border-green-200">
+                    <div class="service-icon group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 mb-6">
+                        <i class="fas fa-shield-alt text-4xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-green-700 group-hover:text-green-800 transition-colors duration-300 leading-tight">Data Protection Compliance</h3>
+                    <p class="text-gray-600 group-hover:text-gray-700 transition-colors duration-300 leading-relaxed text-base">Ensure your department or unit complies with the Data Privacy Act through comprehensive audits, assessments, and guidance.</p>
+                </div>
+                <div class="service-card group hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:border-green-200">
+                    <div class="service-icon group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 mb-6">
+                        <i class="fas fa-graduation-cap text-4xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-green-700 group-hover:text-green-800 transition-colors duration-300 leading-tight">Privacy Training</h3>
+                    <p class="text-gray-600 group-hover:text-gray-700 transition-colors duration-300 leading-relaxed text-base">Conduct regular training sessions and workshops on data privacy best practices for faculty, staff, and students.</p>
+                </div>
+                <div class="service-card group hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:border-green-200">
+                    <div class="service-icon group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 mb-6">
+                        <i class="fas fa-file-contract text-4xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-green-700 group-hover:text-green-800 transition-colors duration-300 leading-tight">Privacy Impact Assessment</h3>
+                    <p class="text-gray-600 group-hover:text-gray-700 transition-colors duration-300 leading-relaxed text-base">Evaluate the privacy implications of new systems, processes, or initiatives before implementation.</p>
+                </div>
+                <div class="service-card group hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:border-green-200">
+                    <div class="service-icon group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 mb-6">
+                        <i class="fas fa-headset text-4xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-green-700 group-hover:text-green-800 transition-colors duration-300 leading-tight">Privacy Consultation</h3>
+                    <p class="text-gray-600 group-hover:text-gray-700 transition-colors duration-300 leading-relaxed text-base">Provide expert advice on data privacy matters, policy development, and incident response procedures.</p>
+                </div>
+                <div class="service-card group hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:border-green-200">
+                    <div class="service-icon group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 mb-6">
+                        <i class="fas fa-exclamation-triangle text-4xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-green-700 group-hover:text-green-800 transition-colors duration-300 leading-tight">Incident Response</h3>
+                    <p class="text-gray-600 group-hover:text-gray-700 transition-colors duration-300 leading-relaxed text-base">Assist in managing and responding to data privacy incidents and breaches in accordance with legal requirements.</p>
+                </div>
+                <div class="service-card group hover:scale-105 hover:shadow-2xl transition-all duration-300 ease-in-out bg-white rounded-xl p-8 shadow-lg border border-gray-100 hover:border-green-200">
+                    <div class="service-icon group-hover:scale-110 group-hover:rotate-3 transition-all duration-300 mb-6">
+                        <i class="fas fa-cogs text-4xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-green-700 group-hover:text-green-800 transition-colors duration-300 leading-tight">Policy Development</h3>
+                    <p class="text-gray-600 group-hover:text-gray-700 transition-colors duration-300 leading-relaxed text-base">Help develop and review data privacy policies, procedures, and guidelines tailored to university operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-8">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="grid md:grid-cols-2 gap-16">
+                <div>
+                    <h3 class="text-3xl font-bold mb-4 text-green-700">Get in Touch</h3>
+                    <p class="text-lg mb-8">Have questions about data privacy? We're here to help. Contact our office for assistance with any privacy-related concerns.</p>
+                    
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <strong class="text-green-700">Address:</strong><br>
+                            Central Luzon State University<br>
+                            Science City of Muñoz, Nueva Ecija<br>
+                            Philippines 3120
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <strong class="text-green-700">Phone:</strong><br>
+                            +63 (44) 456-XXXX
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <strong class="text-green-700">Email:</strong><br>
+                            dpo@clsu.edu.ph
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center gap-4">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <strong class="text-green-700">Office Hours:</strong><br>
+                            Monday - Friday: 8:00 AM - 5:00 PM<br>
+                            Saturday: 8:00 AM - 12:00 PM
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-xl">
+                    <h3 class="text-2xl font-bold mb-6 text-green-700">Send us a Message</h3>
+                    <form id="contact-form">
+                        <div class="mb-4">
+                            <label for="name" class="block font-semibold mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block font-semibold mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="subject" class="block font-semibold mb-2">Subject</label>
+                            <input type="text" id="subject" name="subject" required class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500">
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block font-semibold mb-2">Message</label>
+                            <textarea id="message" name="message" required rows="5" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 resize-vertical"></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-600 text-white py-10 text-center">
+        <div class="max-w-6xl mx-auto px-8">
+            <p class="mb-2">&copy; 2025 Central Luzon State University - Data Privacy Office. All rights reserved.</p>
+            <p class="mb-6">Committed to protecting your privacy and ensuring data protection compliance.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-2xl hover:text-yellow-400 transition-colors duration-300"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-2xl hover:text-yellow-400 transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-2xl hover:text-yellow-400 transition-colors duration-300"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-2xl hover:text-yellow-400 transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Form submission
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We will get back to you soon.');
+            contactForm.reset();
+        });
+    </script>
+</body>
+</html>
